@@ -15,13 +15,13 @@ Pod::Spec.new do |s|
   s.swift_version= '5'
   s.static_framework  = true
 
-  s.ios.deployment_target = '12.1'
+  s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.11'
 
   s.module_name   = "HDWalletKit"
   s.source_files = 'HDWalletKit/**/*.{swift}'
 
   s.dependency 'secp256k1.swift'
-  s.dependency 'CryptoSwift'
+  s.dependency 'CryptoSwift', '1.3.2'
   
 end
